@@ -46,10 +46,9 @@ class CardProduct extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Hero(
-                      tag: 'hero-tag-container-$image',
-                      child: SizedBox(
-                        height: 170,
+                    Expanded(
+                      child: Hero(
+                        tag: 'hero-tag-container-$image',
                         child: Padding(
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           child: Image.network(image, fit: BoxFit.fitWidth),
